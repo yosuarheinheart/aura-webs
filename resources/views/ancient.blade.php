@@ -12,7 +12,7 @@
 </head>
 <body>
     <section class="section section-1">
-        <img class="bg-img" src="/asset/ancient/Sec1.png" alt="Section 1 Background">
+        <img class="bg-img" src="{{('/asset/ancient/Sec1.png')}}" alt="Section 1 Background">
         <div class="title-container">
             <img class="title" src="{{ asset('asset/ancient/TITLE.png') }}" alt="Title">
         </div>
