@@ -1,0 +1,707 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(ellipse at center, 
+                                #B355C5 0%, 
+                                #AD52C1 10%, 
+                                #9C4AB8 20%,
+                                #813EAA 35%, 
+                                #5B2C96 50%, 
+                                #582B94 65%, 
+                                #492585 80%, 
+                                #24185F 90%, 
+                                #1B1555 100%);    
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Ensure dropdown menus are not hidden by Bootstrap's display: none; */
+.main-navbar .dropdown-menu {
+    display: block !important; /* Override Bootstrap's default display: none; */
+}
+
+/* Maintain your existing hidden state with opacity and visibility */
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    background: linear-gradient(to bottom, #2e0066, #4c1d5f);
+    min-width: 200px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    border-radius: 12px;
+    padding: 15px 0;
+    border: 1px solid rgba(255,255,255,0.1);
+    z-index: 99999; /* Ensure it's on top */
+
+    /* Initially hidden via opacity and visibility */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px);
+    transition: all 0.3s ease;
+}
+
+/* Show dropdown when active/hover */
+.dropdown.show .dropdown-menu,
+.dropdown:hover .dropdown-menu { /* Keep the hover effect */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Adjust dropdown arrow rotation for both click and hover */
+.dropdown.show .dropdown-arrow,
+.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* Ensure the navbar itself has a high z-index */
+.main-navbar {
+    z-index: 1050; /* Keep this high */
+}
+
+/* Event Container */
+.event-container {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Stage Background */
+.stage-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Curtains Styles */
+.curtain {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(0 0 20px rgba(0,0,0,0.3));
+}
+
+.curtain-left {
+    left: 0;
+    width: 50%;
+    background-image: url('../asset/event/gordenfullL.png');
+    background-position: left center;
+    transform-origin: right center;
+    transform: scaleX(1);
+}
+
+.curtain-right {
+    right: 0;
+    width: 50%;
+    background-image: url('../asset/event/gordenfull.png');
+    background-position: right center;
+    transform-origin: left center;
+}
+
+/* Logo and Leaf Container - NEW STRUCTURE */
+.logo-container {
+    position: absolute;
+    top: 3%;
+    left: 49%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0vw; /* Responsive gap between elements */
+    width: 100%;
+    max-width: 600px; /* Prevent too wide on large screens */
+    margin-top: 4vw;
+}
+
+.logo {
+    width: 15vw;
+    height: 15vw;
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+    border: 3px solid #ffd700;
+    padding: 0px;
+    flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+.logo-image {
+    width: 120%;
+    height: 155%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 6.5%;
+    margin-top: 2%;
+}
+
+.leaf {
+    width: 25vw;
+    height: 25vw;
+    min-width: 10vw;
+    min-height: 10vw;
+    max-width: 25vw;
+    max-height: 25vw;
+    flex-shrink: 0; 
+    margin: -5vw;
+} 
+
+.leaf-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(2px 2px 8px rgba(0,0,0,0.3));
+}
+.leafL{
+    width: 25vw;
+    height: 25vw;
+    min-width: 10vw;
+    min-height: 10vw;
+    max-width: 25vw;
+    max-height: 25vw;
+    flex-shrink: 0; /* Prevent leaves from shrinking */
+    margin: -5vw;
+}
+.leafR{
+    width: 25vw;
+    height: 25vw;
+    min-width: 10vw;
+    min-height: 10vw;
+    max-width: 25vw;
+    max-height: 25vw;
+    flex-shrink: 0; /* Prevent leaves from shrinking */
+    margin: -6vw;
+    margin-bottom: -11vw;
+}
+
+/* Spotlight Effect */
+.spotlight {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 5;
+}
+
+/* Content Area */
+.content-area {
+    position: relative;
+    z-index: 10;
+    padding-top: 50vh;
+    padding-bottom: 100px;
+}
+
+/* Event Cards */
+.event-card {
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Remove default background, akan diset per card */
+}
+.card-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit; /* mewarisi warna dari .event-title */
+    position: relative;
+    z-index: 2; /* pastikan tetap di atas overlay */
+}
+
+/* Ancient Academy Background */
+.event-card.ancient-academy {
+    background: url('../asset/event/ancientgalery.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Artopia Background */
+.event-card.artopia {
+    background: url('../asset/event/artopiagalery.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Garden of Honors Background */
+.event-card.garden-honors {
+    background: url('../asset/event/gardengalery.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Background overlay for better text readability - PINDAHKAN SETELAH BACKGROUND IMAGES */
+.event-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0); /* Kurangi opacity supaya background terlihat */
+    z-index: 1;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+
+}
+
+/* Ensure content is above the overlay */
+.event-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(255, 255, 255,0.6);
+}
+.event-card:hover .event-title {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Adjust overlay opacity on hover for better visual effect */
+.event-card:hover::before {
+    background: rgba(255, 255, 255, 0.5); /* Lebih transparan saat hover */
+    transition: background-color 0.3s ease;
+}
+
+.event-title {
+    color: #F3BC5D;
+    font-family: "Rafaella";
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 5px 3px #42210B;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 2;
+}
+
+.event-content {
+    color: #4a4a4a;
+    line-height: 1.6;
+    text-align: center;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-text {
+    color: #333; /* Warna lebih gelap supaya kontras */
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Alternative: Jika gambar masih tidak muncul, coba tanpa overlay */
+.event-card.no-overlay::before {
+    display: none;
+}
+
+.event-card.no-overlay .placeholder-text {
+    background: rgba(255, 255, 255, 0.95);
+    color: #2d1b4e;
+    font-weight: 500;
+}
+
+
+.floating-particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    animation: float 8s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.particle:nth-child(1)  { left: 5%;  animation-delay: 0.3s; }
+.particle:nth-child(2)  { left: 10%; animation-delay: 3.1s; }
+.particle:nth-child(3)  { left: 15%; animation-delay: 1.7s; }
+.particle:nth-child(4)  { left: 20%; animation-delay: 6.5s; }
+.particle:nth-child(5)  { left: 25%; animation-delay: 2.4s; }
+.particle:nth-child(6)  { left: 30%; animation-delay: 5.2s; }
+.particle:nth-child(7)  { left: 35%; animation-delay: 0.8s; }
+.particle:nth-child(8)  { left: 40%; animation-delay: 4.6s; }
+.particle:nth-child(9)  { left: 45%; animation-delay: 1.0s; }
+.particle:nth-child(10) { left: 50%; animation-delay: 3.9s; }
+.particle:nth-child(11) { left: 55%; animation-delay: 2.1s; }
+.particle:nth-child(12) { left: 60%; animation-delay: 6.2s; }
+.particle:nth-child(13) { left: 65%; animation-delay: 1.3s; }
+.particle:nth-child(14) { left: 70%; animation-delay: 5.7s; }
+.particle:nth-child(15) { left: 75%; animation-delay: 0.5s; }
+.particle:nth-child(16) { left: 80%; animation-delay: 4.2s; }
+.particle:nth-child(17) { left: 85%; animation-delay: 6.9s; }
+.particle:nth-child(18) { left: 90%; animation-delay: 2.8s; }
+.particle:nth-child(19) { left: 95%; animation-delay: 0.1s; }
+.particle:nth-child(20) { left: 98%; animation-delay: 3.5s; }
+
+
+
+@keyframes float {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Animations */
+@keyframes curtainSway {
+    0%, 100% { 
+        transform: scaleX(1) translateX(0) translateY(0); 
+    }
+    50% { 
+        transform: scaleX(1) translateX(2px) translateY(-1px); 
+    }
+}
+
+@keyframes curtainSwayRight {
+    0%, 100% { 
+        transform: translateX(0) translateY(0); 
+    }
+    50% { 
+        transform: translateX(-2px) translateY(-1px); 
+    }
+}
+
+@keyframes logoGlow {
+    0%, 100% { 
+        box-shadow: 0 0 30px rgba(255, 215, 0, 0.5); 
+    }
+    50% { 
+        box-shadow: 0 0 50px rgba(255, 215, 0, 0.8); 
+    }
+}
+
+@keyframes leafFloat {
+    0%, 100% { 
+        transform: rotate(0deg) translateY(0) scale(1); 
+    }
+    50% { 
+        transform: rotate(0deg) translateY(-3px) scale(1.05); 
+    }
+}
+
+@keyframes leafFloatRight {
+    0%, 100% { 
+        transform: rotate(0deg) translateY(0) scale(1); 
+    }
+    50% { 
+        transform: rotate(0deg) translateY(-3px) scale(1.05); 
+    }
+}
+
+/* Apply Animations */
+.curtain-left {
+    animation: curtainSway 6s ease-in-out infinite;
+}
+
+.curtain-right {
+    animation: curtainSwayRight 6s ease-in-out infinite;
+}
+
+.logo {
+    animation: logoGlow 3s ease-in-out infinite;
+}
+
+.leaf:first-child {
+    animation: leafFloat 4s ease-in-out infinite;
+}
+
+.leaf:last-child {
+    animation: leafFloatRight 4s ease-in-out infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .curtain {
+        width: 45%;
+    }
+
+    .logo {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .leafL {
+        width: 30vw;
+        height: 30vw;
+        min-width: 10vw;
+        min-height: 10vw;
+        max-width: 30vw;
+        max-height: 30vw;
+        flex-shrink: 0;
+        margin: -5vw;
+    }
+    
+    .leafR{
+        width: 30vw;
+        height: 30vw;
+        min-width: 10vw;
+        min-height: 10vw;
+        max-width: 30vw;
+        max-height: 30vw;
+        flex-shrink: 0;
+        margin: -5vw;
+        margin-left: -7vw;
+        margin-bottom: -11vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .curtain {
+        width: 40%;
+        height: 66%;
+    }
+    
+    .logo {
+        width: 25vw;
+        height: 25vw;
+    }
+    
+    .leafL{
+        width: 30vw;
+        height: 35vw;
+        min-width: 10vw;
+        min-height: 10vw;
+        max-width: 35vw;
+        max-height: 35vw;
+        flex-shrink: 0;
+        margin: -5vw;
+    }
+    
+    .leafR{
+        width: 30vw;
+        height: 35vw;
+        min-width: 10vw;
+        min-height: 10vw;
+        max-width: 35vw;
+        max-height: 35vw;
+        flex-shrink: 0;
+        margin: -5vw;
+        margin-bottom: -12vw;
+        margin-left: -6vw;
+    }
+    
+    .logo-container {
+        gap: 1.2vw;
+    }
+    
+    .event-card {
+        margin: 10px;
+        padding: 20px;
+        min-height: 250px;
+    }
+    
+    .event-title {
+        font-size: 20px;
+    }
+    
+    .content-area {
+        padding-top: 35vh;
+    }
+    .particle {
+        width: 5px;
+        height: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .curtain {
+        width: 40%;
+        height: 57%;
+    }
+    
+    .logo {
+        width: 30vw;
+        height: 30vw;
+    }
+    
+    .leafL {
+        width: 35vw;
+        height: 40vw;
+        min-width: 10vw;
+        min-height: 10vw;
+        max-width: 40vw;
+        max-height: 40vw;
+        flex-shrink: 0;
+        margin: -6vw;
+    }
+    
+    .leafR{
+        width: 35vw;
+        height: 40vw;
+        min-width: 10vw;
+        min-height: 10vw;
+        max-width: 40vw;
+        max-height: 40vw;
+        flex-shrink: 0;
+        margin: -6vw;
+        margin-bottom: -14vw;
+    }
+    
+    .logo-container {
+        gap: 1vw;
+    }
+    
+    .event-card {
+        margin: 5px;
+        padding: 15px;
+        min-height: 220px;
+    }
+    
+    .event-title {
+        font-size: 18px;
+    }
+    
+    .content-area {
+        padding-top: 30vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .logo {
+        width: 35vw;
+        height: 35vw;
+    }
+    
+    .leafL{
+        width: 40vw;
+        height: 45vw;
+        min-width: 10vw;
+        min-height: 10vw;
+        max-width: 45vw;
+        max-height: 45vw;
+        flex-shrink: 0;
+        margin: -7vw;
+    }
+    
+    .leafR {
+        width: 40vw;
+        height: 45vw;
+        min-width: 10vw;
+        min-height: 10vw;
+        max-width: 45vw;
+        max-height: 45vw;
+        flex-shrink: 0;
+        margin: -7vw;
+        margin-bottom: -15vw;
+    }
+    
+    .logo-container {
+        gap: 0.8vw;
+        top: 5%;
+    }
+    
+    .curtain {
+        width: 40%;
+        height: 44%;
+    }
+    
+    .event-card {
+        margin: 8px;
+        padding: 12px;
+        border-radius: 10px;
+        min-height: 200px;
+    }
+    
+    .event-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .event-content {
+        font-size: 14px;
+        min-height: 120px;
+    }
+    
+    .content-area {
+        padding-top: 28vh;
+        padding-bottom: 50px;
+    }
+    .particle {
+        width: 4px;
+        height: 4px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .event-card {
+        background: rgba(255, 255, 255, 0.9);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .curtain,
+    .spotlight,
+    .ribbon {
+        display: none;
+    }
+    
+    .event-container {
+        background: white;
+    }
+    
+    .event-card {
+        background: white;
+        box-shadow: none;
+    }
+}
