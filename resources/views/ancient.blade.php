@@ -59,7 +59,7 @@
                         <i class="fas fa-user-edit"></i> Register Now
                     </button>
 
-                    <button class="btn-mid btn-guide" onclick="window.open('https://growagarden.fandom.com/wiki/Grow_a_Garden_Wiki', '_blank')">
+                    <button class="btn-mid btn-guide" data-bs-toggle="modal" data-bs-target="#modalAncient">
                         <i class="fas fa-book-open"></i> Download Guidebook
                     </button>
                 </div>
