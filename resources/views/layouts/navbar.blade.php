@@ -143,11 +143,11 @@
 
 <!-- Modal untuk Guidebook Event Ancient -->
 
-<div class="modal fade" id="modalAncient" tabindex="-1" aria-labelledby="modalAncientLabel" aria-hidden="true">
+<div class="modal fade" id="modalGuidebookAncient" tabindex="-1" aria-labelledby="modalGuidebookAncientLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content" style="border-radius: 1.5vw;">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalAncient">Halaman Belum Tersedia</h5>
+        <h5 class="modal-title" id="modalAncient">Guidebook Belum Tersedia</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
       </div>
       <div class="modal-body">

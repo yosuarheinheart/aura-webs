@@ -59,7 +59,7 @@
                         <i class="fas fa-user-edit"></i> Register Now
                     </button>
 
-                    <button class="btn-mid btn-guide" data-bs-toggle="modal" data-bs-target="#modalAncient">
+                    <button class="btn-mid btn-guide" data-bs-toggle="modal" data-bs-target="#modalGuidebookAncient">
                         <i class="fas fa-book-open"></i> Download Guidebook
                     </button>
                 </div>
