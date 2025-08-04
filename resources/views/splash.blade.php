@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ asset('asset/logoaura2025.png') }}">
 
+    {{-- SEO --}}
     @section ('meta_keywords', "AURA UMN, AURA 2025, AURA UMN 2025, HMDKV UMN")
     @section ('meta_description', "AURA UMN 2025 - The official website for AURA UMN, an annual program initiated by the Visual Communication Design Students Association (HMDKV) at UMN.")
-    @section("title", "AURA UMN - Welcome")
-    <title>AURA UMN - Welcome</title>
+    @section("title", "AURA UMN 2025")
+
+    <meta property="og:title" content="@yield ('title', 'AURA UMN 2025')">
+    <meta property="og:description" content="@yield ('meta_description', 'AURA UMN 2025 - The official website for AURA UMN, an annual program initiated by the Visual Communication Design Students Association (HMDKV) at UMN.')">
+    <meta property="og:image" content="{{ asset('asset/logoaura2025.png') }}">
+    <meta property="og:url" content="https://auraumn.com">        
+
+    <meta name = "keywords" content="@yield ('meta_keywords', 'AURA UMN, AURA 2025, AURA UMN 2025, HMDKV UMN')">
+    <meta name = "author" content="AURA UMN 2025 Website Division">
+
+    <title>AURA UMN 2025</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
         
