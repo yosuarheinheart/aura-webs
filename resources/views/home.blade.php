@@ -280,9 +280,9 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-10 col-md-12">
-                        <div class="accordion custom-accordion" id="faqAccordion">
+                        <div class="accordion custom-accordion" id="faqAccordion" data-animation="fadeIn" style="animation-delay: 1.3s;">
                             <!-- Item 1 -->
-                            <div class="accordion-item fade-in-element" data-animation="fadeIn" style="animation-delay: 1s;">
+                            <div class="accordion-item fade-in-element">
                                 <h2 class="accordion-header" id="faqHeadingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
                                         <i class="fas fa-star accordion-icon"></i>
@@ -296,7 +296,7 @@
                                 </div>
                             </div>
                             <!-- Item 2 -->
-                            <div class="accordion-item fade-in-element" data-animation="fadeIn" style="animation-delay: 1.3s;">
+                            <div class="accordion-item fade-in-element">
                                 <h2 class="accordion-header" id="faqHeadingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
                                         <i class="fas fa-users accordion-icon"></i>
@@ -310,7 +310,7 @@
                                 </div>
                             </div>
                             <!-- Item 3 -->
-                            <div class="accordion-item fade-in-element" data-animation="fadeIn" style="animation-delay: 1.6s;">
+                            <div class="accordion-item fade-in-element">
                                 <h2 class="accordion-header" id="faqHeadingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
                                         <i class="fas fa-calendar-alt accordion-icon"></i>
@@ -324,7 +324,7 @@
                                 </div>
                             </div>
                             <!-- Item 4 -->
-                            <div class="accordion-item fade-in-element" data-animation="fadeIn" style="animation-delay: 1.9s;">
+                            <div class="accordion-item fade-in-element">
                                 <h2 class="accordion-header" id="faqHeadingFour">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
                                         <i class="fas fa-question-circle accordion-icon"></i>
