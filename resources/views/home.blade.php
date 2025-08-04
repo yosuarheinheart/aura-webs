@@ -122,9 +122,9 @@
                 <img src="{{ asset('asset/home/timelinemaskot.png') }}" alt="Timeline Mascot" class="timeline-mascot fade-in-element" data-animation="fadeInLeft" style="animation-delay: 3.5s;">
 
                 <ul id="dates" >
-                    <li class="fade-in-element" data-animation="fadeIn" style="animation-delay: 2.3s;"><span data-hash="1900">1-16 Agustus 2025</span></li>
-                    <li class="fade-in-element" data-animation="fadeIn" style="animation-delay: 2.6s;"><span data-hash="1930">1-16 Agustus 2025</span></li>
-                    <li class="fade-in-element" data-animation="fadeIn" style="animation-delay: 2.9s;"><span data-hash="1944">6-10 Oktober 2025</span></li>
+                    <li class="fade-in-element" data-animation="fadeIn" style="animation-delay: 2.3s;"><span data-hash="1900">1-16 August 2025</span></li>
+                    <li class="fade-in-element" data-animation="fadeIn" style="animation-delay: 2.6s;"><span data-hash="1930">1-16 August 2025</span></li>
+                    <li class="fade-in-element" data-animation="fadeIn" style="animation-delay: 2.9s;"><span data-hash="1944">6-10 October 2025</span></li>
                     
                 </ul>
                 <ul id="issues" class="fade-in-element" data-animation="fadeIn" style="animation-delay: 3.5s;">

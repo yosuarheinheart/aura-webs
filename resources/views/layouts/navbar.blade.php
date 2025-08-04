@@ -128,11 +128,11 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content" style="border-radius: 1.5vw;">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalAncient">Halaman Belum Tersedia</h5>
+        <h5 class="modal-title" id="modalAncient">Page Not Available</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
       </div>
       <div class="modal-body">
-        Saat ini, registrasi Ancient Academy belum dibuka. Silahkan kembali lagi nanti.
+        Currently, Ancient Academy registration is not open. Please come back later.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn-modal" data-bs-dismiss="modal">Tutup</button>
@@ -147,11 +147,11 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content" style="border-radius: 1.5vw;">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalAncient">Guidebook Belum Tersedia</h5>
+        <h5 class="modal-title" id="modalAncient">Guidebook Not Available</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
       </div>
       <div class="modal-body">
-        Saat ini, Guidebook Ancient Academy belum tersedia. Silahkan kembali lagi nanti.
+        Currently, the Ancient Academy Guidebook is not available. Please come back later.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn-modal" data-bs-dismiss="modal">Tutup</button>
@@ -166,11 +166,11 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content" style="border-radius: 1.5vw;">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalEventLabel">Halaman Belum Tersedia</h5>
+        <h5 class="modal-title" id="modalEventLabel">Page Not Available</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
       </div>
       <div class="modal-body">
-        Halaman Event saat ini belum tersedia. Silahkan kembali lagi nanti.
+        Currently, the Event page is not available. Please come back later.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn-modal" data-bs-dismiss="modal">Tutup</button>
@@ -184,11 +184,11 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content" style="border-radius: 1.5vw;">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalDivisiLabel">Halaman Belum Tersedia</h5>
+        <h5 class="modal-title" id="modalDivisiLabel">Page Not Available</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
       </div>
       <div class="modal-body">
-        Halaman Divisi saat ini belum tersedia. Silahkan kembali lagi nanti.
+        Currently, the Division page is not available. Please come back later.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn-modal" data-bs-dismiss="modal">Tutup</button>
@@ -203,11 +203,11 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content" style="border-radius: 1.5vw;">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalGardenLabel">Halaman Belum Tersedia</h5>
+        <h5 class="modal-title" id="modalGardenLabel">Page Not Available</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
       </div>
       <div class="modal-body">
-        Halaman Garden of Honors saat ini belum tersedia. Silahkan kembali lagi nanti.
+        Currently, the 'Garden of Honors' page is not available. Please come back later.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn-modal" data-bs-dismiss="modal">Tutup</button>
