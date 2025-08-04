@@ -170,7 +170,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
       </div>
       <div class="modal-body">
-        Currently, the Event page is not available. Please come back later.
+        Currently, the 'Event' page is not available. Please come back later.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn-modal" data-bs-dismiss="modal">Tutup</button>
@@ -188,7 +188,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
       </div>
       <div class="modal-body">
-        Currently, the Division page is not available. Please come back later.
+        Currently, the 'Division' page is not available. Please come back later.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn-modal" data-bs-dismiss="modal">Tutup</button>
