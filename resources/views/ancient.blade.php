@@ -87,7 +87,7 @@
                 <li style="--accent-color:#D3634A">
                     <div class="date">1-16 August 2025</div>
                     <div class="content-box2">
-                        <div class="title-in text-center">Ancient Registration</div>
+                        <div class="title-in text-center">Registration</div>
                     </div>
                 </li>
                 <li style="--accent-color:#C54E34">
@@ -105,25 +105,25 @@
                 <li style="--accent-color:#872009">
                     <div class="date">25 September 2025</div>
                     <div class="content-box2">
-                        <div class="title-in text-center">Ancient Briefing</div>
+                        <div class="title-in text-center">Participant Briefing</div>
                     </div>
                 </li>
                 <li style="--accent-color:#872009">
                     <div class="date">29 September 2025</div>
                     <div class="content-box2">
-                        <div class="title-in text-center">Ancient Opening</div>
+                        <div class="title-in text-center">Ancient Academy Opening</div>
                     </div>
                 </li>
                 <li style="--accent-color:#45150A">
                     <div class="date">29 September - 02 October 2025</div>
                     <div class="content-box2">
-                        <div class="title-in text-center">Ancient Event</div>
+                        <div class="title-in text-center">Ancient Academy Event</div>
                     </div>
                 </li>
                 <li style="--accent-color:#2D0B03">
                     <div class="date">02 October 2025</div>
                     <div class="content-box2">
-                        <div class="title-in text-center">Ancient Closing</div>
+                        <div class="title-in text-center">Ancient Academy Closing</div>
                     </div>
                 </li>
             </ul>
