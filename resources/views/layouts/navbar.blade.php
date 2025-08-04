@@ -226,6 +226,62 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css");
 
 /* Main Navbar Styles */
+@font-face {
+    font-family: 'Altone Trial';
+    src: url('../asset/fonts/Altone\ Trial-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Altone Trial Bold';
+    src: url('../asset/fonts/Altone\ Trial-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Altone Trial Oblique';
+    src: url('../asset/fonts/Altone\ Trial-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Altone Trial Bold Oblique';
+    src: url('../asset/fonts/Altone\ Trial-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rafaella';
+    src: url('../asset/fonts/fonnts.com-Rafaella-.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rafaella Shadow';
+    src: url('../asset/fonts/fonnts.com-Rafaella-Shadow-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rafaella Shadow Bold';
+    src: url('../asset/fonts/fonnts.com-Rafaella-Shadow-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 .main-navbar {
     background: linear-gradient(to bottom, #2e0066, #6c2c74);
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);

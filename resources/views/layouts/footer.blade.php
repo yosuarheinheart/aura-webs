@@ -71,7 +71,61 @@
 
 {{-- CSS --}}
 <style>
+@font-face {
+    font-family: 'Altone Trial';
+    src: url('../asset/fonts/Altone\ Trial-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Altone Trial Bold';
+    src: url('../asset/fonts/Altone\ Trial-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Altone Trial Oblique';
+    src: url('../asset/fonts/Altone\ Trial-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Altone Trial Bold Oblique';
+    src: url('../asset/fonts/Altone\ Trial-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rafaella';
+    src: url('../asset/fonts/fonnts.com-Rafaella-.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rafaella Shadow';
+    src: url('../asset/fonts/fonnts.com-Rafaella-Shadow-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rafaella Shadow Bold';
+    src: url('../asset/fonts/fonnts.com-Rafaella-Shadow-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     footer div[style*="grid-template-columns"] {
