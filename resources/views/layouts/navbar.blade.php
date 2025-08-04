@@ -5,8 +5,8 @@
         <div class="nav-content">
             
             {{-- Navbar Brand --}}
-            <meta name="description" content="@yield ('description', 'AURA (Artistic Unity & Reflection in Action) is an annual program initiated by the Visual Communication Design Students Association (HMDKV) at UMN. AURA 2025 is a platform that presents student expression, creativity, and identities through various art and design-based activities.')">
-            <meta name="keywords" content="@yield ('keywords', 'AURA, UMN, AURA UMN, AURA 2025, HMDKV UMN')">
+            <meta name="description" content="@yield ('meta_description', '')">
+            <meta name="keywords" content="@yield ('meta_keywords', '')">
             
             {{-- Logo/Brand --}}
             <a class="navbar-brand d-flex align-items-center" href="{{ route('home.view') }}">
