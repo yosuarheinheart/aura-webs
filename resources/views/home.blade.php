@@ -273,14 +273,14 @@
             </div>
         </section>
 
-        <section id = "faq" class="faq-section">
+        <section id = "faq" class="faq-section" data-animation="fadeIn" style="animation-delay: 1.3s;">
             <div class="container">
                 <div class="faq-title-wrapper fade-in-element" data-animation="fadeInUp" style="animation-delay: 0.5s;">
                     <img src="{{ asset('asset/home/FAQText.png') }}" alt="FAQ Title" class="faq-title-img">
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-10 col-md-12">
-                        <div class="accordion custom-accordion" id="faqAccordion" data-animation="fadeIn" style="animation-delay: 1.3s;">
+                        <div class="accordion custom-accordion" id="faqAccordion">
                             <!-- Item 1 -->
                             <div class="accordion-item fade-in-element">
                                 <h2 class="accordion-header" id="faqHeadingOne">
