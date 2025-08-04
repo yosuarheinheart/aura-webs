@@ -1,5 +1,5 @@
 <link rel="icon" href="{{ asset('asset/logoaura2025.png') }}">
-<title>AURA UMN - @yield('title', 'AURA UMN 2025')</title>
+<title>@yield('title', '')</title>
 <nav class="main-navbar">
     <div class="nav-container">
         <div class="nav-content">

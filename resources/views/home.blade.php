@@ -7,10 +7,6 @@
     <meta name="description" content="AURA (Artistic Unity & Reflection in Action) is an annual program initiated by the Visual Communication Design Students Association (HMDKV) at UMN. AURA 2025 is a platform that presents student expression, creativity, and identities through various art and design-based activities.">
     <meta name="keywords" content="AURA, UMN, AURA UMN, AURA 2025, HMDKV UMN">
 
-    {{-- SEO --}}
-    @section('title', 'AURA UMN 2025')
-    @section('description', 'AURA (Artistic Unity & Reflection in Action) is an annual program initiated by the Visual Communication Design Students Association (HMDKV) at UMN. AURA 2025 is a platform that presents student expression, creativity, and identities through various art and design-based activities.')
-    @section('keywords', 'AURA, UMN, AURA UMN, AURA 2025, HMDKV UMN')
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -25,6 +21,13 @@
     <script src="{{ asset('js/carousel.js') }}"></script>
 
 @include ('layouts.navbar')
+
+
+    {{-- SEO --}}
+    @section ('meta_keywords', "AURA UMN, AURA 2025, AURA UMN 2025, HMDKV UMN")
+    @section ('meta_description', "AURA UMN 2025 - The official website for AURA UMN, an annual program initiated by the Visual Communication Design Students Association (HMDKV) at UMN.")
+    @section("title", "AURA UMN 2025")
+
 </head>
 
 <body>
