@@ -276,7 +276,7 @@
             });
 
             const downloadButton = document.getElementById('downloadGuidebookBtn');
-            const googleDriveLink = 'https://drive.google.com/file/d/1wTItnwwUoNnhONi_8ZCZat-lr7ieUfWY/view?usp=drive_link';
+            const googleDriveLink = 'https://drive.google.com/file/d/1JKVkjBTctu_IMkUwrM4Me7wkNTBQb65y/view?usp=drivesdk';
 
             downloadButton.addEventListener('click', function() {
                 window.open(googleDriveLink, '_blank');
