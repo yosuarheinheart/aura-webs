@@ -77,7 +77,9 @@
         
         <img src="{{ asset('asset/home/highlightofaura.png') }}" alt="Highlight Title" class="highlight-title-img fade-in-element" data-animation="fadeInDown" style="animation-delay: 0s;">
         <div class="highlight-carousel ">
-            <button class="carousel-arrow left-carousel-arrow fade-in-element" id="prevEvent" data-animation="fadeInLeft" style="animation-delay: 1s;">&lt;</button>
+            <button class="carousel-arrow left-carousel-arrow fade-in-element" id="prevEvent" data-animation="fadeInLeft" style="animation-delay: 1s;">
+                <i class="fas fa-chevron-left"></i>
+            </button>
 
             <div class="events-container-wrapper fade-in-element" id="eventsContainerWrapper" data-animation="fadeInUp" style="animation-delay: 1s;">
                 <div class="events-container" id="eventsContainer">
@@ -111,7 +113,9 @@
                 </div>
             </div>
 
-            <button class="carousel-arrow right-carousel-arrow fade-in-element" id="nextEvent" data-animation="fadeInRight" style="animation-delay: 1s;">&gt;</button>
+            <button class="carousel-arrow right-carousel-arrow fade-in-element" id="nextEvent" data-animation="fadeInRight" style="animation-delay: 1s;">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
     </div>
     </section>
