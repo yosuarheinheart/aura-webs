@@ -84,7 +84,7 @@
         }
 
         body {
-            font-family: 'Rafaella', sans-serif;
+            font-family: 'Rafaella';
             overflow: hidden;
             background: #1a0f2e;
         }
