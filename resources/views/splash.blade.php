@@ -380,7 +380,7 @@
             <div class="aura-logo">
                 <img src="{{ asset('asset/logoaura.png') }}" alt="AURA Logo">
             </div>
-            <div class="umn-text">Aura 2025</div>
+            <div class="umn-text">AURA 2025</div>
         </div>
         
         <!-- Loading Bar -->
