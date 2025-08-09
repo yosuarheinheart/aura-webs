@@ -7,6 +7,10 @@
     <meta name="description" content="AURA (Artistic Unity & Reflection in Action) is an annual program initiated by the Visual Communication Design Students Association (HMDKV) at UMN. AURA 2025 is a platform that presents student expression, creativity, and identities through various art and design-based activities.">
     <meta name="keywords" content="AURA, UMN, AURA UMN, AURA 2025, HMDKV UMN">
 
+    {{-- SEO --}}
+    @section('title', 'AURA UMN 2025')
+    @section('description', 'AURA (Artistic Unity & Reflection in Action) is an annual program initiated by the Visual Communication Design Students Association (HMDKV) at UMN. AURA 2025 is a platform that presents student expression, creativity, and identities through various art and design-based activities.')
+    @section('keywords', 'AURA, UMN, AURA UMN, AURA 2025, HMDKV UMN')
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,21 +25,6 @@
     <script src="{{ asset('js/carousel.js') }}"></script>
 
 @include ('layouts.navbar')
-
-
-    {{-- SEO --}}
-    @section ('meta_keywords', "AURA UMN, AURA 2025, AURA UMN 2025, HMDKV UMN")
-    @section ('meta_description', "AURA UMN 2025 - The official website for AURA UMN, an annual program initiated by the Visual Communication Design Students Association (HMDKV) at UMN.")
-    @section("title", "AURA UMN 2025")
-
-    <meta property="og:title" content="@yield ('title', 'AURA UMN 2025')">
-    <meta property="og:description" content="@yield ('meta_description', 'AURA UMN 2025 - The official website for AURA UMN, an annual program initiated by the Visual Communication Design Students Association (HMDKV) at UMN.')">
-    <meta property="og:image" content="{{ asset('asset/logoaura2025.png') }}">
-    <meta property="og:url" content="https://auraumn.com">        
-
-    <meta name = "keywords" content="@yield ('meta_keywords', 'AURA UMN, AURA 2025, AURA UMN 2025, HMDKV UMN')">
-    <meta name = "author" content="AURA UMN 2025 Website Division">
-
 </head>
 
 <body>
@@ -52,7 +41,7 @@
         </div>
         <!-- Tagline Section -->
         </div>
-        <img src="{{ asset('asset/home/Tagline.png') }}" alt="Tagline Image" class="tagline-title-img fade-in-element" data-animation="fadeInDown" style="animation-delay: 1s;">
+        <img src="{{ asset('asset/home/tagline.png') }}" alt="Tagline Image" class="tagline-title-img fade-in-element" data-animation="fadeInDown" style="animation-delay: 1s;">
         <div class="tagline-content-wrapper fade-in-element" data-animation="fadeInUp" style="animation-delay: 1s;">
             <p class="tagline-text-description" style="text-align: justify;">
                 The tagline "Beyond the Clock, Creativity Unlock" captures a journey of exploration where each step beyond the limits of time opens up endless creative possibilities. 
@@ -138,7 +127,7 @@
 
                 <ul id="dates" >
                     <li class="fade-in-element" data-animation="fadeIn" style="animation-delay: 2.3s;"><span data-hash="1900">1-16 August 2025</span></li>
-                    <li class="fade-in-element" data-animation="fadeIn" style="animation-delay: 2.6s;"><span data-hash="1930">1-16 August 2025</span></li>
+                    <li class="fade-in-element" data-animation="fadeIn" style="animation-delay: 2.6s;"><span data-hash="1930">3-16 August 2025</span></li>
                     <li class="fade-in-element" data-animation="fadeIn" style="animation-delay: 2.9s;"><span data-hash="1944">6-10 October 2025</span></li>
                     
                 </ul>
