@@ -41,7 +41,7 @@
         </div>
         <!-- Tagline Section -->
         </div>
-        <img src="{{ asset('asset/home/tagline.png') }}" alt="Tagline Image" class="tagline-title-img fade-in-element" data-animation="fadeInDown" style="animation-delay: 1s;">
+        <img src="{{ asset('asset/home/Tagline.png') }}" alt="Tagline Image" class="tagline-title-img fade-in-element" data-animation="fadeInDown" style="animation-delay: 1s;">
         <div class="tagline-content-wrapper fade-in-element" data-animation="fadeInUp" style="animation-delay: 1s;">
             <p class="tagline-text-description" style="text-align: justify;">
                 The tagline "Beyond the Clock, Creativity Unlock" captures a journey of exploration where each step beyond the limits of time opens up endless creative possibilities. 
